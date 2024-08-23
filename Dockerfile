@@ -1,7 +1,9 @@
 FROM nginx
 
+WORKDIR /app
+
 copy . /app
 
-copy ./index.html /usr/share/nginx/html
+copy . /usr/share/nginx/html/
 
 EXPOSE 80
